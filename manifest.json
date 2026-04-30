@@ -1,6 +1,6 @@
 {
-  "name": "youni",
-  "short_name": "youni",
+  "name": "Youni",
+  "short_name": "Youni",
   "description": "A dedicated platform for Moroccan students to upload, store, and access academic files and study materials in one place.",
   "start_url": "/",
   "display": "standalone",
@@ -8,7 +8,7 @@
   "theme_color": "#56bc50",
   "icons": [
     {
-      "src": "https://amoqdnddxbfclqivvhiy.supabase.co/storage/v1/object/public/Youni/app/icon.png",
+      "src": "https://youni.younes-ksassoua.workers.dev/storage/v1/object/public/Youni/app/icon.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
