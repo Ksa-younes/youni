@@ -1,6 +1,6 @@
 {
-  "name": "Youni",
-  "short_name": "Youni",
+  "name": "youni.",
+  "short_name": "youni.",
   "description": "A dedicated platform for Moroccan students to upload, store, and access academic files and study materials in one place.",
   "start_url": "/",
   "display": "standalone",
