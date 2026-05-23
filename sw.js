@@ -2,17 +2,17 @@ self.addEventListener('push', (event) => {
   if (!event.data) return;
   
   try {
-    const data = event.data.json(); // Takes whatever JSON you send
+    const data = event.data.json(); 
     event.waitUntil(
       self.registration.showNotification(data.title || 'Notification', {
         body: data.body,
         icon: data.icon,
-        actions: data.actions, // This handles your buttons
-        data: data.url // For clicks
+        actions: data.actions, 
+        data: data.url 
       })
     );
   } catch (err) {
-    // If not JSON, just show text fallback
+    
     event.waitUntil(
       self.registration.showNotification('Notification', {
         body: event.data.text()
