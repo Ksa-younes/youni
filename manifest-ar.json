@@ -1,7 +1,7 @@
 {
   "name": "Youni",
   "short_name": "Youni",
-  "description": "A dedicated platform for FPL students to access academic files and study materials in one place.",
+  "description": "منصة مخصصة لطلاب الكلية المتعددة التخصصات بالعرائش للوصول إلى الملفات والدروس في مكان واحد.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

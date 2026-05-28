@@ -12,7 +12,7 @@ self.addEventListener('push', (event) => {
       })
     );
   } catch (err) {
-    
+    // If not JSON, just show text fallback
     event.waitUntil(
       self.registration.showNotification('Notification', {
         body: event.data.text()
