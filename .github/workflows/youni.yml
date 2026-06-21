@@ -1,7 +1,9 @@
-name: Sync Assets Loop
+name: Sync Loop
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'
 
 jobs:
   build-and-sync:
@@ -17,6 +19,7 @@ jobs:
       - name: Fetch Remote Files
         run: |
           wget -m -p -k -nH --cut-dirs=0 https://youni-561480809159.europe-west2.run.app/
+          rm -f robots.txt
 
       - name: Purge Tracking Elements
         run: |
