@@ -33,7 +33,7 @@ jobs:
         run: |
           if [ -d assets ]; then
             for f in assets/*.js; do
-              npx terser "$f" --compress --mangle --mangle-props keep_quoted,regex=_ -o "$f"
+              npx terser "$f" --compress --mangle -o "$f"
             done
           fi
           if [ -f index.html ]; then
