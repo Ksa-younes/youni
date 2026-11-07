@@ -33,11 +33,11 @@ jobs:
         run: |
           if [ -d assets ]; then
             for f in assets/*.js; do
-              npx terser "$f" --compress --mangle --comments false -o "$f"
+              npx terser "$f" --compress --mangle --mangle-props keep_quoted,regex=_ -o "$f"
             done
           fi
           if [ -f index.html ]; then
-            npx html-minifier --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --minify-css true --minify-js true -o index.html index.html
+            npx html-minifier@4.0.0 --collapse-whitespace --remove-comments --remove-redundant-attributes --remove-script-type-attributes --remove-style-link-type-attributes --minify-css true --minify-js true -o index.html index.html
           fi
 
       - name: Push to Pipeline
